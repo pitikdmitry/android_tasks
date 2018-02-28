@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">task2</string>
+    <string name="app_answer_ok">OK, you can use app</string>
+    <string name="app_answer_bad">Please wait 3 sec to use app</string>
 </resources>

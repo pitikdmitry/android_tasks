@@ -12,9 +12,6 @@ import android.widget.TextView;
 
 import java.util.Date;
 
-/**
- * This class is just an example of Application component and actually does nothing.
- */
 public class App extends Application {
 
     private Date date = new Date();
@@ -26,8 +23,7 @@ public class App extends Application {
         public void onReceive(final Context context, final Intent intent) {
             if (intent != null && Intent.ACTION_SCREEN_OFF.equals(intent.getAction())) {
                 date = new Date();
-                System.out.println("SCREEEN OFF");
-
+                System.out.println("SCREEN OFF");
             }
         }
     };
@@ -36,7 +32,7 @@ public class App extends Application {
         @Override
         public void onReceive(final Context context, final Intent intent) {
             if (intent != null && Intent.ACTION_SCREEN_ON.equals(intent.getAction())) {
-                System.out.println("SCREEEN On");
+                System.out.println("SCREEN On");
                 Date currentDate = new Date();
                 if(currentDate.getTime() - date.getTime() < 3000) {
                     startActivity(mainBadActivity);
@@ -61,6 +57,6 @@ public class App extends Application {
 
         mainActivity = new Intent(this, MainActivity.class);
         mainBadActivity = new Intent(this, MainActivityBad.class);
-//        startActivity(mainActivity);
+        startActivity(mainActivity);
     }
 }

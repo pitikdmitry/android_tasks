@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ff00"
+    android:orientation="vertical"
+    android:width="20dp"
+    android:height="20dp"
+    android:id="@+id/layout_green">
+
+    <Button
+        android:id="@+id/btn_fragment_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="green_btn"/>
+
+</LinearLayout>
